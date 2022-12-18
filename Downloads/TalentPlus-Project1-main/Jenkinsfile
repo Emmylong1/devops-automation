@@ -1,0 +1,15 @@
+pipeline {
+    
+    agent any 
+
+    stages{
+
+        stage("Git check"){
+
+            steps{
+
+                git branch: 'main', url: 'https://github.com/Emmylong1/TalentPlus-Project1.git'
+            }
+        }
+    }
+}
