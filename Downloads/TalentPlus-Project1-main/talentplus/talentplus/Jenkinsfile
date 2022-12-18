@@ -11,5 +11,13 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/Emmylong1/TalentPlus-Project1.git'
             }
         }
+         stage("UNIT Testing"){
+            
+            steps{
+
+                sh "mvn test"
+
+            }
+        }
     }
 }
